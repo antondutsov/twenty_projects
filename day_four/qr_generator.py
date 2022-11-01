@@ -1,16 +1,15 @@
-"""since we need python to create a image firs we will install the “Image” library and bc that image contains text which is need to be translate into a 2D machine code we will install “qr” library.
+"""
+since we need python to create an image firs we will install the “Image” library and bc that image contains text which
+is need to be translated into a 2D machine code we will install “qr” library.
 """
 # pip install qr Image - on Windows and Linux OS
-# pip3 install qr Image - on MacOS
+# pip3 install qr Image - on macOS
 
 # Importing library
 import qrcode
 
 
 def generate_qrcode(text):
-    # Data to encode
-    text = "Python QR Generator"
-
     # Creating an instance of QRCode class
     qr = qrcode.QRCode(version=1,
                        box_size=10,
